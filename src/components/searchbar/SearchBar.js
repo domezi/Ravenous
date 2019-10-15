@@ -9,12 +9,15 @@ const sortByOptions = {
 
 class SearchBar extends React.Component {
   renderSortByOptions() {
+
+    // adding return word as bugfix
     return Object.keys(sortByOptions).map(sortByOption => {
     let sortByOptionValue = sortByOptions[sortByOption];
       return (
         <li key={sortByOptionValue}>{sortByOption}</li>
       )}
     )
+
   };
   render() {
     return(
